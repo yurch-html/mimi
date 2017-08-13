@@ -1,0 +1,22 @@
+@media(max-width: 1320px){
+	.header-page__logo{
+		align-items: center;
+		display: flex;
+	}
+	
+	.logo{
+		font-size: 0.8px;
+	}
+	
+	html {
+		font-size: 0.8px;
+	}
+	
+	.footer-page__menu {
+		max-width: 310px;
+	}
+	
+	.nav-slider__item{
+		padding-top: 3px;
+	}
+}
