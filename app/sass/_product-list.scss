@@ -192,7 +192,21 @@
 	height: 100%;
 }
 
-
+.main-page.reverce{
+	.bg-main__wrap{
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+	.bg-main__wrap>b{
+		margin-bottom: 0;
+		margin-top: 7px;
+	}
+	.bg-main{
+		border-top: none;
+		border-bottom: 6px solid #ed7d31;
+	}
+}
 
 
 
