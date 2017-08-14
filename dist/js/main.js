@@ -170,7 +170,9 @@ $(document).ready(function() {
 				$('.bg-main__wrap').append(b);
 			}
 		}	
+		$('.main-page').addClass('reverce');
 	}
+	
 	
 });
 	
