@@ -2043,7 +2043,7 @@ svg {
   line-height: 1.2; }
 
 .arrow-back-wp {
-  z-index: 3;
+  z-index: 5;
   position: absolute;
   left: 29px;
   top: 28px;
