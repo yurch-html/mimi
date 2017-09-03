@@ -2197,7 +2197,8 @@ svg {
   color: #fad9c2; }
 
 .color-slider-wp {
-  max-width: 204px;
+  max-width: 209px;
+  margin-left: -5px;
   position: relative; }
   .color-slider-wp .slick-next, .color-slider-wp .slick-prev {
     z-index: 3;
@@ -2212,14 +2213,14 @@ svg {
     outline: none;
     cursor: pointer; }
   .color-slider-wp .slick-next {
-    bottom: 19px;
+    bottom: 14px;
     right: 19px;
     -webkit-transform: rotate(-45deg);
         -ms-transform: rotate(-45deg);
             transform: rotate(-45deg); }
   .color-slider-wp .slick-prev {
-    left: 12px;
-    top: 7px;
+    left: 17px;
+    top: 14px;
     -webkit-transform: rotate(134deg);
         -ms-transform: rotate(134deg);
             transform: rotate(134deg); }
@@ -2237,14 +2238,11 @@ svg {
       -ms-flex-line-pack: start;
           align-content: flex-start;
   margin-right: -5px;
-  margin-left: -5px;
   overflow: hidden; }
 
 .color-sect__item {
   width: 25%;
-  padding-left: 5px;
-  padding-right: 5px;
-  padding-bottom: 10px; }
+  padding: 5px; }
 
 .color-product {
   position: relative;
@@ -2257,6 +2255,9 @@ svg {
   -webkit-border-radius: 5px;
           border-radius: 5px;
   background-size: cover; }
+  .color-product.active {
+    -webkit-box-shadow: 0 0 0 2px;
+            box-shadow: 0 0 0 2px; }
   .color-product:before, .color-product:after {
     content: '';
     position: absolute;
@@ -2291,12 +2292,12 @@ svg {
   z-index: 3; }
 
 .product-page-desc__color {
-  padding-top: 17px;
-  margin-bottom: 17px;
+  padding-top: 13px;
+  margin-bottom: 21px;
   background-image: url(../img/product/bestseller.png);
   background-repeat: no-repeat;
-  background-size: 46%;
-  background-position: bottom right; }
+  background-size: 45%;
+  background-position: 99% 100%; }
 
 .product-page-desc__format {
   display: -webkit-box;
