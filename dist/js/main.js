@@ -173,6 +173,56 @@ $(document).ready(function() {
 		$('.main-page').addClass('reverce');
 	}
 	
+	//	--------------------------CARD PAGE--------------------
+	$('.portfolio-thumb-slider').slick({
+		slidesToShow: 5,
+		slidesToScroll: 1,
+		asNavFor: '.portfolio-item-slider',
+		dots: false,
+		arrows: true,
+		focusOnSelect: true,
+		draggable:false,
+		infinite: true,
+		vertical: true
+	});
+
+	$('.portfolio-item-slider').slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		arrows: false,
+		asNavFor: '.portfolio-thumb-slider',
+		infinite: true,
+		draggable:false
+
+	});
+	
+	$('.color-slider').slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		arrows: true,
+		infinite: true,
+		draggable:false
+
+	});
+	$('.color-slider-wp .slick-prev').hide();
+	
+	$('.color-slider').on('afterChange', function(event, slick, currentSlide){
+		if (currentSlide === 0) { 
+			$('.color-slider-wp .slick-next').show(100);
+			$('.color-slider-wp .slick-prev').hide(100);
+		}
+		
+		if (currentSlide === 1) { 
+			$('.color-slider-wp .slick-next').show(100);
+			$('.color-slider-wp .slick-prev').show(100);
+		}
+		
+		if (currentSlide == 2) { 
+			$('.color-slider-wp .slick-next').hide(100);
+			$('.color-slider-wp .slick-prev').show(100);
+		}
+	});
+	
 	
 });
 	
